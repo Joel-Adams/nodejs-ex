@@ -2,7 +2,7 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "nodejs-mongodb-example",
+    "name": "jadams-xcel-nodejs-mongodb-example",
     "annotations": {
       "openshift.io/display-name": "Node.js + MongoDB (Ephemeral)",
       "description": "An example Node.js application with a MongoDB database. For more information about using this template, including OpenShift considerations, see https://github.com/sclorg/nodejs-ex/blob/master/README.md.\n\nWARNING: Any data stored will be lost upon pod destruction. Only use this template for testing.",
@@ -17,8 +17,8 @@
   },
   "message": "The following service(s) have been created in your project: ${NAME}, ${DATABASE_SERVICE_NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/sclorg/nodejs-ex/blob/master/README.md.",
   "labels": {
-      "template": "nodejs-mongodb-example",
-      "app": "nodejs-mongodb-example"
+      "template": "jadams-xcel-nodejs-mongodb-example",
+      "app": "jadams-xcel-nodejs-mongodb-example"
   },
   "objects": [
     {
@@ -166,7 +166,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "nodejs-mongodb-example"
+                "jadams-xcel-nodejs-mongodb-example"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -192,7 +192,7 @@
           "spec": {
             "containers": [
               {
-                "name": "nodejs-mongodb-example",
+                "name": "jadams-xcel-nodejs-mongodb-example",
                 "image": " ",
                 "ports": [
                   {
@@ -423,7 +423,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "nodejs-mongodb-example"
+      "value": "jadams-xcel-nodejs-mongodb-example"
     },
     {
       "name": "NAMESPACE",
